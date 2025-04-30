@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "a0b603f1-7e7d-4cbc-b0f7-8c3748693c75",
+		"name": "Task_TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39258674"
+	},
+	"item": [
+		{
+			"name": "task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Assigned_To\": \"User 2\",\r\n     \"status\": \"In Progress\",\r\n     \"Due_Date\": \"14/9/2024\",\r\n     \"Priority\": \"High\",\r\n     \"Comments\": \"This task is good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Assigned_To\": \"User 2\",\r\n     \"status\": \"In Progress\",\r\n     \"Due_Date\": \"14/9/2024\",\r\n     \"Priority\": \"High\",\r\n     \"Comments\": \"This task is bad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/task/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"task",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/task/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
